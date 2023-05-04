@@ -236,8 +236,6 @@ public class ContactosCovid {
 
 	private PosicionPersona crearPosicionPersona(String[] data) {
 		PosicionPersona posicionPersona = new PosicionPersona();
-		String fecha = null, hora;
-		float latitud = 0, longitud;
 		posicionPersona.setDocumento(data[1]);
 		posicionPersona.setFechaPosicion(parsearFecha(data[2], data[3]));
 		posicionPersona.setCoordenada(new Coordenada(Float.parseFloat(data[4]), Float.parseFloat(data[5])));
